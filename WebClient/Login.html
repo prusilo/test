@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Acceso</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="Scripts/access.js"></script>
+    <script src="Scripts/cookieManager.js"></script>
+    <script src="Scripts/loading.js"></script>
+    <script>
+        const user = document.getElementById('input_user');
+        const pass = document.getElementById('input_password');
+
+        const result = login(user.value, pass.value);
+        if (result) {
+
+        }
+    </script>
+
+</head>
+<body>
+    <div id="loginForm">
+        <div>
+            <label for="input_user">User:</label>
+            <input type="text" id="input_user" />
+
+            <label for="input_password">Password:</label>
+            <input type="password" id="input_password" />
+
+            <button onclick="validate">Login</button>
+
+            <div id="login"></div>
+        </div>
+    </div>
+</body>
+</html>
